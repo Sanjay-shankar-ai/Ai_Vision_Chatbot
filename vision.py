@@ -61,7 +61,7 @@ if user_message and st.session_state.base64_image:
     # Get the chat completion response
     chat_completion = client.chat.completions.create(
         messages=messages,
-        model="mistral-saba-24b",
+        model="meta-llama/llama-4-scout-17b-16e-instruct",
     )
 
     # Store user message and bot response in conversation history
